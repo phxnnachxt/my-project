@@ -13,6 +13,13 @@ use App\Repositories\RolesRepositoryInterface;
 use App\Repositories\Eloquent\UserRepository;
 use App\Repositories\UserRepositoryInterface;
 
+
+use App\Repositories\Eloquent\RawMaterialsRepository;
+use App\Repositories\RawMaterialsRepositoryInterface;
+
+use App\Repositories\Eloquent\ReplacementRawMaterialsRepository;
+use App\Repositories\ReplacementRawMaterialsRepositoryInterface;
+
 class RepositoriesProvider extends ServiceProvider
 {
     /**
@@ -25,6 +32,9 @@ class RepositoriesProvider extends ServiceProvider
         $this->app->bind(RolesRepositoryInterface::class, RolesRepository::class);
 
         $this->app->bind(UserRepositoryInterface::class, UserRepository::class);
+
+        $this->app->bind(RawMaterialsRepositoryInterface::class, RawMaterialsRepository::class);
+        $this->app->bind(ReplacementRawMaterialsRepositoryInterface::class, ReplacementRawMaterialsRepository::class);
     }
 
     /**

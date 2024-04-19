@@ -134,7 +134,7 @@ class UserController extends Controller
         $totalRecordswithFilter = $totalRecords = $this->user->getAll($param, $sherchField, $relationsship)->count();
 
         // Fetch records
-        $records = $this->user->paginate($param, $sherchField, $relationsship);
+        $records = $this->user->paginate($param, $sherchField, $relationsship, null, null);
 
         return [
             "aaData" => $records,

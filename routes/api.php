@@ -48,3 +48,9 @@ Route::delete('/users/delete', [
     \App\Http\Controllers\APIs\UserController::class,
     'deleteApi'
 ])->name('user.delete');
+
+
+Route::get('/get/rawmaterials', [
+    \App\Http\Controllers\APIs\RawMaterials::class,
+    'getRawMaterials'
+])->name('get.rawmaterials');

@@ -124,14 +124,12 @@
             // กำหนด URL สำหรับดึงข้อมูล
             ajax: {
                 url: '{{ route('user.with.datatable') }}',
-
                 // กำหนด method การส่งข้อมูล
                 type: "post",
-
                 // กำหนด header เพิ่มเติม
                 beforeSend: function(xhr) {
                     xhr.setRequestHeader('Authorization',
-                        'Bearer dHC1pHrp62zCYoN8QydVmQrhGEvgLIGJBr3tAtHMa268f4d0');
+                    'Bearer ZmowLGESHS4dHh006DzHXrhMSobVinGd0He0VXWQ6bb3dc14');
                 }
             },
             columns: [{
